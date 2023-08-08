@@ -4,10 +4,10 @@
 # Using build pattern: distutils3
 #
 Name     : pypi-torchmetrics
-Version  : 1.0.2
-Release  : 2
-URL      : https://files.pythonhosted.org/packages/6d/99/6a136eb3d107deaed87e92d94dcc18add5dfff1d3baf54977858b82b6e1c/torchmetrics-1.0.2.tar.gz
-Source0  : https://files.pythonhosted.org/packages/6d/99/6a136eb3d107deaed87e92d94dcc18add5dfff1d3baf54977858b82b6e1c/torchmetrics-1.0.2.tar.gz
+Version  : 1.0.3
+Release  : 3
+URL      : https://files.pythonhosted.org/packages/28/01/b6c344ac04b53ebe3759ba938f1406775fe7649c44ba2e27e467be4e6fe9/torchmetrics-1.0.3.tar.gz
+Source0  : https://files.pythonhosted.org/packages/28/01/b6c344ac04b53ebe3759ba938f1406775fe7649c44ba2e27e467be4e6fe9/torchmetrics-1.0.3.tar.gz
 Summary  : PyTorch native Metrics
 Group    : Development/Tools
 License  : Apache-2.0
@@ -59,10 +59,10 @@ python3 components for the pypi-torchmetrics package.
 
 
 %prep
-%setup -q -n torchmetrics-1.0.2
-cd %{_builddir}/torchmetrics-1.0.2
+%setup -q -n torchmetrics-1.0.3
+cd %{_builddir}/torchmetrics-1.0.3
 pushd ..
-cp -a torchmetrics-1.0.2 buildavx2
+cp -a torchmetrics-1.0.3 buildavx2
 popd
 
 %build
@@ -70,7 +70,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1691429097
+export SOURCE_DATE_EPOCH=1691521834
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib

@@ -4,10 +4,10 @@
 # Using build pattern: distutils3
 #
 Name     : pypi-torchmetrics
-Version  : 1.1.0
-Release  : 4
-URL      : https://files.pythonhosted.org/packages/9a/c6/23bf77ef8213697495eeda2d1d6ecf703bcb53e18c562af124ee6b7b77e8/torchmetrics-1.1.0.tar.gz
-Source0  : https://files.pythonhosted.org/packages/9a/c6/23bf77ef8213697495eeda2d1d6ecf703bcb53e18c562af124ee6b7b77e8/torchmetrics-1.1.0.tar.gz
+Version  : 1.1.1
+Release  : 5
+URL      : https://files.pythonhosted.org/packages/c7/77/cc3a96f3df3144e3792c6dd2e724b98a739ab93019d9a54ada35818c5421/torchmetrics-1.1.1.tar.gz
+Source0  : https://files.pythonhosted.org/packages/c7/77/cc3a96f3df3144e3792c6dd2e724b98a739ab93019d9a54ada35818c5421/torchmetrics-1.1.1.tar.gz
 Summary  : PyTorch native Metrics
 Group    : Development/Tools
 License  : Apache-2.0
@@ -17,7 +17,6 @@ Requires: pypi-torchmetrics-python3 = %{version}-%{release}
 BuildRequires : buildreq-distutils3
 BuildRequires : pypi(lightning_utilities)
 BuildRequires : pypi(numpy)
-BuildRequires : pypi(packaging)
 BuildRequires : pypi(torch)
 # Suppress stripping binaries
 %define __strip /bin/true
@@ -51,7 +50,6 @@ Requires: python3-core
 Provides: pypi(torchmetrics)
 Requires: pypi(lightning_utilities)
 Requires: pypi(numpy)
-Requires: pypi(packaging)
 Requires: pypi(torch)
 
 %description python3
@@ -59,10 +57,10 @@ python3 components for the pypi-torchmetrics package.
 
 
 %prep
-%setup -q -n torchmetrics-1.1.0
-cd %{_builddir}/torchmetrics-1.1.0
+%setup -q -n torchmetrics-1.1.1
+cd %{_builddir}/torchmetrics-1.1.1
 pushd ..
-cp -a torchmetrics-1.1.0 buildavx2
+cp -a torchmetrics-1.1.1 buildavx2
 popd
 
 %build
@@ -70,7 +68,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1692834279
+export SOURCE_DATE_EPOCH=1693325853
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib

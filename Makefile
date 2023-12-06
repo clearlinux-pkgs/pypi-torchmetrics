@@ -1,5 +1,5 @@
 PKG_NAME := pypi-torchmetrics
-URL = https://files.pythonhosted.org/packages/a5/a4/35e223fb9ade66bc3b6e759c1f95bad0a682b455cd7fbb5ad42a9dd5ba21/torchmetrics-1.2.0.tar.gz
+URL = https://files.pythonhosted.org/packages/bd/37/311adaa03be13fe808d150bf4b61427bf62ee5297274bb56cdacbea3c548/torchmetrics-1.2.1.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common

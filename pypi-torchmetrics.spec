@@ -7,7 +7,7 @@
 #
 Name     : pypi-torchmetrics
 Version  : 1.2.1
-Release  : 9
+Release  : 10
 URL      : https://files.pythonhosted.org/packages/bd/37/311adaa03be13fe808d150bf4b61427bf62ee5297274bb56cdacbea3c548/torchmetrics-1.2.1.tar.gz
 Source0  : https://files.pythonhosted.org/packages/bd/37/311adaa03be13fe808d150bf4b61427bf62ee5297274bb56cdacbea3c548/torchmetrics-1.2.1.tar.gz
 Summary  : PyTorch native Metrics
@@ -50,6 +50,7 @@ python components for the pypi-torchmetrics package.
 Summary: python3 components for the pypi-torchmetrics package.
 Group: Default
 Requires: python3-core
+Provides: pypi(torchmetrics)
 Requires: pypi(lightning_utilities)
 Requires: pypi(numpy)
 Requires: pypi(packaging)

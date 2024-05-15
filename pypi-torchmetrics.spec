@@ -6,10 +6,10 @@
 # autospec commit: 5905be9
 #
 Name     : pypi-torchmetrics
-Version  : 1.4.0
-Release  : 20
-URL      : https://github.com/Lightning-AI/torchmetrics/archive/v1.4.0/torchmetrics-1.4.0.tar.gz
-Source0  : https://github.com/Lightning-AI/torchmetrics/archive/v1.4.0/torchmetrics-1.4.0.tar.gz
+Version  : 1.4.0.post0
+Release  : 21
+URL      : https://github.com/Lightning-AI/torchmetrics/archive/v1.4.0.post0/torchmetrics-1.4.0.post0.tar.gz
+Source0  : https://github.com/Lightning-AI/torchmetrics/archive/v1.4.0.post0/torchmetrics-1.4.0.post0.tar.gz
 Summary  : PyTorch native Metrics
 Group    : Development/Tools
 License  : Apache-2.0
@@ -52,7 +52,6 @@ Provides: pypi(torchmetrics)
 Requires: pypi(lightning_utilities)
 Requires: pypi(numpy)
 Requires: pypi(packaging)
-Requires: pypi(pretty_errors)
 Requires: pypi(torch)
 
 %description python3
@@ -60,10 +59,10 @@ python3 components for the pypi-torchmetrics package.
 
 
 %prep
-%setup -q -n torchmetrics-1.4.0
-cd %{_builddir}/torchmetrics-1.4.0
+%setup -q -n torchmetrics-1.4.0.post0
+cd %{_builddir}/torchmetrics-1.4.0.post0
 pushd ..
-cp -a torchmetrics-1.4.0 buildavx2
+cp -a torchmetrics-1.4.0.post0 buildavx2
 popd
 
 %build
@@ -71,7 +70,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1715016509
+export SOURCE_DATE_EPOCH=1715784263
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib

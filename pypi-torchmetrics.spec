@@ -7,7 +7,7 @@
 #
 Name     : pypi-torchmetrics
 Version  : 1.5.1
-Release  : 26
+Release  : 27
 URL      : https://github.com/Lightning-AI/torchmetrics/archive/v1.5.1/torchmetrics-1.5.1.tar.gz
 Source0  : https://github.com/Lightning-AI/torchmetrics/archive/v1.5.1/torchmetrics-1.5.1.tar.gz
 Summary  : PyTorch native Metrics
